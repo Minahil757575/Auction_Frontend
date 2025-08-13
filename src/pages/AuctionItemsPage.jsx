@@ -1,4 +1,3 @@
-// src/pages/AuctionItemsPage.jsx
 import { useEffect, useState } from "react";
 import { Row, Col, message } from "antd";
 import AuctionCard from "../components/AuctionCard";
