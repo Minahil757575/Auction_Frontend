@@ -1,0 +1,62 @@
+/* src/components/AuctionCard.css */
+body{
+    background-color: black;
+}
+.auction-card {
+  background: linear-gradient(145deg, #2f1a52, #5d3b6d);
+  color: #f1f1f1;
+  border: 1px solid rgba(128, 0, 255, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(128, 0, 255, 0.2);
+  padding: 16px !important;
+  margin: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.auction-card:hover {
+  box-shadow: 0 6px 25px rgba(128, 0, 255, 0.4);
+  transform: translateY(-4px);
+}
+
+.auction-card .ant-card-head-title {
+  color: #00ff80;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.auction-description {
+  color: #d4d4d4;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  word-wrap: break-word;
+}
+
+.auction-price {
+  color: skyblue;
+  margin-bottom: 8px;
+}
+
+.auction-status {
+  margin-top: 10px;
+  font-weight: bold;
+  border: 3px solid green;
+}
+
+.auction-btn-container {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.auction-btn {
+  background: linear-gradient(90deg, #7f00ff, #e100ff);
+  border: 2 px solid white;
+  border-radius: 8px;
+  padding: 6px 18px;
+  font-size: 0.95rem;
+}
+
+.auction-btn:hover {
+  background: linear-gradient(90deg, #9a1fff, #f342ff);
+}

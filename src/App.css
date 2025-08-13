@@ -1,0 +1,79 @@
+
+body {
+  background-color: #f9fafb; /* Tailwind's gray-50 */
+}
+
+.ant-card {
+  border-radius: 0.75rem; /* rounded-xl */
+}
+
+.ant-btn-primary {
+  background-color: #1677ff;
+}
+/* App.css */
+
+/* Layout base styles */
+.min-h-screen {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #1e1233, #2b1847);
+}
+
+/* ===== NAVBAR HEADER ===== */
+.ant-layout-header {
+  background: linear-gradient(90deg, #2f1a52, #5d3b6d);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-shadow: 0 4px 15px rgba(128, 0, 255, 0.2);
+  border-bottom: 1px solid rgba(128, 0, 255, 0.3);
+}
+
+/* Static heading "Aura-ction System" */
+.nav-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00ff80;
+  letter-spacing: 1px;
+  margin-right: 30px;
+}
+
+/* Nav links container */
+.nav-links {
+  display: flex;
+  flex: wrap;
+  gap: 25px;
+}
+
+/* Individual nav link */
+.nav-links a {
+  color: #d4d4d4;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+/* Hover effect for nav links */
+.nav-links a:hover {
+  background: rgba(128, 0, 255, 0.2);
+  color: #00ff80;
+  box-shadow: 0 0 8px rgba(128, 0, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Active link style */
+.nav-links a.active {
+  background: linear-gradient(90deg, #7f00ff, #e100ff);
+  color: white;
+  box-shadow: 0 0 10px rgba(128, 0, 255, 0.5);
+}
+
+/* ===== CONTENT AREA ===== */
+.ant-layout-content {
+  padding: 30px;
+  background: transparent;
+  min-height: calc(100vh - 64px);
+}
+
