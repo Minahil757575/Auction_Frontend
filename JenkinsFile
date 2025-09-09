@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        nodejs "NodeJS" // The NodeJS config name from Jenkins Global Tool Config
+        nodejs "NodeJS"   // This should match the name you configured in Jenkins
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/Minahil757575/Auction_Frontend.git'
+                git branch: 'main', url: 'https://github.com/your-username/your-react-repo.git'
             }
         }
 
@@ -18,10 +18,21 @@ pipeline {
             }
         }
 
-        stage('Run Dev Server') {
+        stage('Build') {
             steps {
-                // Run Vite dev server in background on port 5173
-                sh 'nohup npm run dev -- --host 0.0.0.0 > dev.log 2>&1 &'
+                sh 'npm run build'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh 'npm test -- --watchAll=false'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploy step goes here (copy build/ to server, S3, etc.)'
             }
         }
     }
