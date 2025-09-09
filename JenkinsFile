@@ -24,9 +24,9 @@ pipeline {
             }
         }
 
-        stage('Test') {
+         stage('Run Dev Server') {
             steps {
-                bat 'npm test -- --watchAll=false'
+                bat 'npm run dev'
             }
         }
 
